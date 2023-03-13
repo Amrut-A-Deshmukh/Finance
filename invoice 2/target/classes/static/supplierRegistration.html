@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice System</title>
+</head>
+<body>
+<form action="#" th:action="@{/suppliers}" method="post">
+  <label>Name:</label>
+  <input type="text" placeholder="Enter your Name" th:field="*{supplierName}"><br>
+  <label>Username:</label>
+  <input type="text" placeholder="Enter your Username" th:field="*{supplierUsername}"><br>
+  <label>Password:</label>
+  <input type="password" th:field="*{supplierPassword}"><br>
+  <label>Address:</label>
+  <input type="text" placeholder="Enter your Address" th:field="*{supplierAddress}"><br>
+  <label>Mobile Number:</label>
+  <input type="text" placeholder="Enter your Mobile Number" th:field="*{supplierMobileNumber}"><br>
+  <label>Email:</label>
+  <input type="text" placeholder="Enter your Email" th:field="*{supplierEmail}"><br>
+  <label>Credit Account Number:</label>
+  <input type="text" placeholder="Enter your Credit Account Number" th:field="*{supplierCreditAccountNumber}"><br>
+  <label>Credit Information:</label>
+  <input type="text" placeholder="Enter your Credit Information" th:field="*{supplierCreditInformation}"><br>
+  <button type="submit">Register</button>
+</body>
+</html>
