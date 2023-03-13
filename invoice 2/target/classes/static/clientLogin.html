@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice System</title>
+</head>
+<body>
+<form action="#" th:action="@{clients}" method="get">
+  <label>Username:</label>
+  <input type="text" placeholder="Enter the username" th:field="*{clientUsername}"><br>
+  <label>Password:</label>
+  <input type="password" th:field="*{clientPassword}"><br>
+  <button type="submit">Login</button>
+</form>
+</body>
+</html>
